@@ -69,7 +69,7 @@ const HeroCategoryMenu = () => {
       </div>
       <div
         ref={containerScrollRef}
-        className="mb-[15px] w-full overflow-hidden overflow-x-auto relative"
+        className="mb-[15px] w-full overflow-hidden overflow-x-hidden relative"
       >
         <div className="max-w-[1150px] mx-auto">
           <div className="flex items-center gap-[15px] text-[19px] pb-[50px] px-[30px]">

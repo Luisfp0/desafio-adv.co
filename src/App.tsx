@@ -4,11 +4,11 @@ import CategoriesScreen from "./pages/CategoriesScreen";
 
 function App() {
   return (
-    <section className="w-screen h-auto overflow-hidden pr-[10px]">
+    <div className="overflow-hidden">
       <Header />
       <HeroCategoryMenu />
       <CategoriesScreen />
-    </section>
+    </div>
   );
 }
 
