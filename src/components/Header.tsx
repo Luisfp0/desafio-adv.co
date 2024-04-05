@@ -4,13 +4,13 @@ import { Image } from "@chakra-ui/react";
 
 export function Header() {
   return (
-    <div className="container mx-auto flex justify-center items-center w-full max-w-[1150px] h-[80px]">
+    <div className=" container mx-auto flex justify-center items-center w-full max-w-[1150px] h-[80px]">
       <div className="px-[15px] py-[20px] flex items-center w-full">
         <a href="#">
           <Image src={logo} alt="Logo 99designs"></Image>
         </a>
         <div className="flex gap-[25px]">
-          <nav className="flex pl-[45px] list-none gap-[25px]">
+          <nav className="flex pl-[45px] list-none gap-[25px] text-bold">
             <li>
               <a href="#">Categorias</a>
             </li>
