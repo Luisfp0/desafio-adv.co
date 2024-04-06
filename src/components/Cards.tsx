@@ -15,7 +15,7 @@ const Cards = () => {
   return (
     <div className="flex flex-wrap justify-start relative">
       <figure>
-        <div className="absolute top-[535px] -right-[180px]">
+        <div className="absolute top-[535px] -right-[280px]">
           <img className="w-[825px] h-[470px]" src={fishImage}></img>
         </div>
       </figure>

@@ -45,7 +45,7 @@ const HeroCategoryMenu = () => {
   return (
     <>
       <div className="relative">
-        <h1 className="pl-[30px] mt-[30px] text-[24px] mb-[25px] max-w-[1150px] mx-auto">
+        <h1 className="pl-[30px] mt-[30px] text-[24px] mb-[25px] lg:max-w-[1024px] md:max-w-[768px] mx-auto">
           Para o quê você precisa de design?
         </h1>
         <div
@@ -69,9 +69,9 @@ const HeroCategoryMenu = () => {
       </div>
       <div
         ref={containerScrollRef}
-        className="mb-[15px] w-full overflow-hidden overflow-x-hidden relative"
+        className="mb-[15px] overflow-x-hidden relative"
       >
-        <div className="max-w-[1150px] mx-auto">
+        <div className="lg:max-w-[1024px] md:max-w-[768px] mx-auto">
           <div className="flex items-center gap-[15px] text-[19px] pb-[50px] px-[30px]">
             <input
               className={`transition-all duration-300 font-bold py-[22px] text-[19px] rounded-md border-[#dad9d7]
@@ -129,7 +129,7 @@ const HeroCategoryMenu = () => {
             </button>
             <button
               onClick={() => setSearch(false)}
-              className="px-[30px] py-[22px] bg-[#DAD9D7] box-border flex-shrink-0"
+              className="px-[30px] py-[22px] bg-[#DAD9D7] box-border flex-shrink-0 "
             >
               Livro e revista
             </button>

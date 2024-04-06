@@ -4,7 +4,7 @@ import Quiz from "../assets/quiz.png";
 
 const CategoriesScreen = () => {
   return (
-    <div className="container flex flex-col justify-center max-w-[1150px] mx-auto pt-[60px] mb-[50px]">
+    <div className="container flex flex-col justify-center lg:max-w-[1024px] md:max-w-[768px] mx-auto pt-[60px] mb-[50px]">
       <Cards />
       <div className="flex w-full justify-center items-center bg-[#efedea] mt-[50px] rounded-lg">
         <div className="flex flex-col items-start w-7/12 p-[20px]">
