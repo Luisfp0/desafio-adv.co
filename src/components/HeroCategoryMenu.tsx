@@ -1,6 +1,7 @@
 import { Search2Icon } from "@chakra-ui/icons";
 import "../index.css";
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const HeroCategoryMenu = () => {
   const [search, setSearch] = useState(false);
@@ -91,12 +92,13 @@ const HeroCategoryMenu = () => {
             >
               <Search2Icon />
             </button>
-            <button
+            <Link
               onClick={() => setSearch(false)}
-              className="lg:px-[30px] lg:py-[22px] md:px-[30px] md:py-[22px] px-[25px] py-[17px] box-border flex-shrink-0 bg-[#DAD9D7] hover:bg-white hover:shadow-2xl rounded-md"
+              to="/checkout"
+              className="btn btn-primary lg:px-[30px] lg:py-[22px] md:px-[30px] md:py-[22px] px-[25px] py-[17px] box-border flex-shrink-0 bg-[#DAD9D7] hover:bg-white hover:shadow-2xl rounded-md"
             >
               Logotipo e identidade
-            </button>
+            </Link>
             <button
               onClick={() => setSearch(false)}
               className="lg:px-[30px] lg:py-[22px] md:px-[30px] md:py-[22px] px-[25px] py-[17px] box-border flex-shrink-0 bg-[#DAD9D7] hover:bg-white hover:shadow-2xl rounded-md"

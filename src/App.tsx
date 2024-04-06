@@ -1,23 +1,21 @@
-// import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import HeroCategoryMenu from "./components/HeroCategoryMenu";
 import CategoriesScreen from "./pages/CategoriesScreen";
-// import { SideBar } from "./components/SideBar";
 
 function App() {
-  // const [openSideBar, setOpenSideBar] = useState(false);
-
   return (
-    <>
+    <Router>
       <div className="overflow-hidden">
-        {/* <SideBar openSideBar={openSideBar} /> */}
         <div className="flex-col">
           <Header />
-          <HeroCategoryMenu />
-          <CategoriesScreen />
+          <Routes>
+            <Route path="/" element={<CategoriesScreen />} />
+            <Route path="/checkout" element={<HeroCategoryMenu />} />
+          </Routes>
         </div>
       </div>
-    </>
+    </Router>
   );
 }
 
