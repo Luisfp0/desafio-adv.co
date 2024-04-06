@@ -107,8 +107,8 @@ export function Header() {
           </div>
         </DrawerContent>
       </Drawer>
-      <div className=" container mx-auto flex justify-center items-center w-full lg:max-w-[1024px] md:max-w-[768px] h-[80px]">
-        <div className="px-[15px] py-[20px] flex items-center w-full md:justify-between">
+      <div className=" container mx-auto flex justify-center items-center w-full lg:max-w-[1024px] md:max-w-[768px] max-w-[540px] h-[80px]">
+        <div className="px-[15px] py-[20px] flex items-center w-full justify-between">
           <div className="md:flex lg:hidden">
             <Button ref={btnRef} onClick={onOpen}>
               <HamburgerIcon />
@@ -118,7 +118,7 @@ export function Header() {
             <Image src={logo} alt="Logo 99designs"></Image>
           </a>
           <div className="flex gap-[25px]">
-            <nav className="lg:flex md:hidden pl-[45px] list-none gap-[25px] text-bold">
+            <nav className="lg:flex hidden pl-[45px] list-none gap-[25px] text-bold">
               <li>
                 <a href="#">Categorias</a>
               </li>
@@ -135,7 +135,7 @@ export function Header() {
                 <a href="#">Pro</a>
               </li>
             </nav>
-            <a href="#" className="flex items-center justify-center md:hidden">
+            <a href="#" className="lg:flex items-center justify-center hidden">
               <PhoneIcon className="mr-[5px]" />
               +1 877 834 4534
             </a>

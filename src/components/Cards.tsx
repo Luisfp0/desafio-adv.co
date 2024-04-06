@@ -14,13 +14,13 @@ import fishImage from "../assets/logo-01.avif";
 const Cards = () => {
   return (
     <div className="flex flex-wrap justify-start relative">
-      <figure>
-        <div className="absolute top-[535px] -right-[280px]">
+      <figure className="lg:flex hidden">
+        <div className="absolute lg:top-[535px] lg:-right-[280px]">
           <img className="w-[825px] h-[470px]" src={fishImage}></img>
         </div>
       </figure>
       <a href="#" className="border-b-[1px] hover:text-black">
-        <div className="p-[20px] bg-white box-border w-[469px] hover:scale-105 hover:shadow-2xl transition shadown-none">
+        <div className="p-[20px] bg-white box-border lg:w-[469px] md:w-[768px] hover:scale-105 hover:shadow-2xl transition shadown-none">
           <div>
             <div className="flex items-center justify-center px-[10px] w-[140px] mb-[15px] py-[4px] bg-[#01a1c1] rounded-xl">
               <StarIcon className="mr-[10px]" color={"white"} />
@@ -40,7 +40,7 @@ const Cards = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-[10px] w-[430px] text-[14px]">
+            <div className="mt-[10px] lg:w-[430px] text-[14px]">
               <span>
                 Logotipo e principais itens digitais e impressos dos quais você
                 precisa para começar sua marca com o pé direito
@@ -64,7 +64,7 @@ const Cards = () => {
         </div>
       </a>
       <a href="#" className=" border-l-[1px] border-b-[1px] hover:text-black">
-        <div className="hover:scale-105 hover:shadow-2xl transition shadown-none bg-white h-full box-border p-[20px] w-[234px]">
+        <div className="hover:scale-105 hover:shadow-2xl transition shadown-none bg-white h-full box-border p-[20px] lg:w-[234px] md:w-[384px]">
           <div>
             <div>
               <Image src={A} className="w-[70px] h-[70px]"></Image>
@@ -82,7 +82,7 @@ const Cards = () => {
         </div>
       </a>
       <a href="#" className="hover:text-black border-l-[1px] border-b-[1px]">
-        <div className="hover:scale-105 hover:shadow-2xl transition shadown-none bg-white h-full box-border p-[20px] w-[234px]">
+        <div className="hover:scale-105 hover:shadow-2xl transition shadown-none bg-white h-full box-border p-[20px] lg:w-[234px] md:w-[384px]">
           <div>
             <div>
               <Image src={verificar} className="w-[70px] h-[70px]"></Image>
@@ -100,7 +100,7 @@ const Cards = () => {
         </div>
       </a>
       <a href="#" className=" hover:text-black border-b-[1px]">
-        <div className=" hover:scale-105 hover:shadow-2xl transition shadown-none bg-white box-border p-[20px] w-[469px]">
+        <div className=" hover:scale-105 hover:shadow-2xl transition shadown-none bg-white box-border p-[20px] lg:w-[469px] md:w-[768px]">
           <div>
             <div className="flex">
               <Image src={teste} className="w-[70px] h-[70px]"></Image>
@@ -114,7 +114,7 @@ const Cards = () => {
                 </span>
               </div>
             </div>
-            <div className="mt-[10px] w-[430px] text-[14px]">
+            <div className="mt-[10px] lg:w-[430px] text-[14px]">
               <span>
                 Leve o design do seu logotipo a outro patamar com uma marca de
                 verdade combinando fontes, cores e estilos
@@ -136,7 +136,7 @@ const Cards = () => {
         href="#"
         className="hover:text-black hover:scale-105 hover:shadow-2xl transition shadown-none bg-white border-l-[1px] border-b-[1px]"
       >
-        <div className="box-border p-[20px] w-[469px]">
+        <div className="box-border p-[20px] lg:w-[469px] md:w-[768px]">
           <div>
             <div className="flex">
               <Image src={cassino} className="w-[70px] h-[70px]"></Image>
@@ -150,7 +150,7 @@ const Cards = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-[10px] w-[430px] text-[14px]">
+            <div className="mt-[10px] lg:w-[430px] text-[14px]">
               <span>Um logotipo e cartão de visita</span>
               <ul className="pt-[7px]">
                 <li>
@@ -168,7 +168,7 @@ const Cards = () => {
         href="#"
         className="hover:text-black hover:scale-105 hover:shadow-2xl transition shadown-none bg-white border-b-[1px]"
       >
-        <div className="box-border p-[20px] w-[469px]">
+        <div className="box-border p-[20px] lg:w-[469px] md:w-[768px]">
           <div>
             <div className="flex">
               <Image src={computer} className="w-[70px] h-[70px]"></Image>
@@ -180,7 +180,7 @@ const Cards = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-[10px] w-[430px] text-[14px]">
+            <div className="mt-[10px] lg:w-[430px] text-[14px]">
               <span>
                 Um logotipo personalizado e um site Squarespace que combina com
                 sua marca
@@ -201,9 +201,15 @@ const Cards = () => {
           </div>
         </div>
       </a>
+      <figure className="lg:hidden md:flex">
+        <div className="flex flex-col items-center justify-center mt-[50px]">
+          <img src={fishImage} />
+          <span className="py-[50px]">pordalibor πych</span>
+        </div>
+      </figure>
       <div className="w-[469px]"></div>
       <a href="#" className="hover:text-black border-b-[1px]">
-        <div className="box-border hover:scale-105 hover:shadow-2xl transition shadown-none bg-white p-[20px] w-[469px]">
+        <div className="box-border hover:scale-105 hover:shadow-2xl transition shadown-none bg-white p-[20px] md:w-[768px] lg:w-[469px]">
           <div>
             <div className="flex">
               <Image src={midiaSocial} className="w-[70px] h-[70px]"></Image>
@@ -217,7 +223,7 @@ const Cards = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-[10px] w-[430px] text-[14px]">
+            <div className="mt-[10px] lg:w-[430px] text-[14px]">
               <span>
                 Logotipo e capas das redes sociais para deixar sua impressão
                 online
@@ -240,9 +246,9 @@ const Cards = () => {
           </div>
         </div>
       </a>
-      <div className="w-[469px] border-b-[1px]"></div>
+      <div className="md:w-0 lg:w-[469px] border-b-[1px]"></div>
       <a href="#" className=" border-b-[1px] hover:text-black">
-        <div className="h-full box-border p-[20px] w-[234px] hover:scale-105 hover:shadow-2xl transition shadown-none bg-white">
+        <div className="h-full box-border p-[20px] lg:w-[234px] md:w-[380px] hover:scale-105 hover:shadow-2xl transition shadown-none bg-white">
           <div>
             <div>
               <Image src={contentIconNew} className="w-[70px] h-[70px]"></Image>
@@ -262,7 +268,7 @@ const Cards = () => {
         </div>
       </a>
       <a href="#" className="border-l-[1px] border-b-[1px] hover:text-black">
-        <div className="h-full box-border p-[20px] w-[234px] hover:scale-105 hover:shadow-2xl transition shadown-none bg-white">
+        <div className="h-full box-border p-[20px] lg:w-[234px] md:w-[380px] hover:scale-105 hover:shadow-2xl transition shadown-none bg-white">
           <div>
             <div>
               <Image src={letter} className="w-[70px] h-[70px]"></Image>
@@ -280,7 +286,7 @@ const Cards = () => {
         </div>
       </a>
       <a href="#" className="hover:text-black border-l-[1px] border-b-[1px]">
-        <div className="box-border p-[20px] h-full w-[469px] hover:scale-105 hover:shadow-2xl transition shadown-none bg-white">
+        <div className="box-border p-[20px] h-full lg:w-[469px] md:w-[768px] hover:scale-105 hover:shadow-2xl transition shadown-none bg-white">
           <div>
             <div className="flex">
               <Image src={comece} className="w-[70px] h-[70px]"></Image>
@@ -291,7 +297,7 @@ const Cards = () => {
                 <span className="text-[16px]">A partir de US$ 3,999</span>
               </div>
             </div>
-            <div className="mt-[10px] w-[430px] text-[14px]">
+            <div className="mt-[10px] lg:w-[430px] text-[14px]">
               <span>
                 A estrategicaly created brand identity guided by your personal
                 Creative Director from 99Design Studio
