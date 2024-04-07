@@ -18,6 +18,7 @@ import {
 import React from "react";
 import { Icon } from "@chakra-ui/react";
 import { FaHouse } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -114,9 +115,9 @@ export function Header() {
               <HamburgerIcon />
             </Button>
           </div>
-          <a href="#">
+          <Link to="/">
             <Image src={logo} alt="Logo 99designs"></Image>
-          </a>
+          </Link>
           <div className="flex gap-[25px]">
             <nav className="lg:flex hidden pl-[45px] list-none gap-[25px] text-bold">
               <li>

@@ -20,7 +20,6 @@ function CheckoutScreen() {
       const ulElement = fixedOnScrollRef.current;
       if (ulElement) {
         const rect = ulElement.getBoundingClientRect();
-        console.log(rect.top);
         if (rect.top <= 0) {
           setUlFixed(true);
         } else {
@@ -46,7 +45,7 @@ function CheckoutScreen() {
                 onClick={() => setSelected("first")}
                 className={`pb-[4px] ${
                   selected === "first" && "border-b-[2px]"
-                } border-black`}
+                } border-black cursor-pointer`}
               >
                 O que está incluido
               </li>
@@ -54,7 +53,7 @@ function CheckoutScreen() {
                 onClick={() => setSelected("second")}
                 className={`pb-[4px] ${
                   selected === "second" && "border-b-[2px]"
-                } border-black`}
+                } border-black cursor-pointer`}
               >
                 Como funciona
               </li>
@@ -62,7 +61,7 @@ function CheckoutScreen() {
                 onClick={() => setSelected("third")}
                 className={`pb-[4px] ${
                   selected === "third" && "border-b-[2px]"
-                } border-black`}
+                } border-black cursor-pointer`}
               >
                 Preços
               </li>
@@ -70,7 +69,7 @@ function CheckoutScreen() {
                 onClick={() => setSelected("fourth")}
                 className={`pb-[4px] ${
                   selected === "fourth" && "border-b-[2px]"
-                } border-black`}
+                } border-black cursor-pointer`}
               >
                 Perguntas frequentes
               </li>
@@ -140,7 +139,7 @@ function CheckoutScreen() {
               onClick={() => setSelected("first")}
               className={`pb-[4px] ${
                 selected === "first" && "border-b-[2px]"
-              } border-black`}
+              } border-black cursor-pointer`}
             >
               O que está incluido
             </li>
@@ -148,7 +147,7 @@ function CheckoutScreen() {
               onClick={() => setSelected("second")}
               className={`pb-[4px] ${
                 selected === "second" && "border-b-[2px]"
-              } border-black`}
+              } border-black cursor-pointer`}
             >
               Como funciona
             </li>
@@ -156,7 +155,7 @@ function CheckoutScreen() {
               onClick={() => setSelected("third")}
               className={`pb-[4px] ${
                 selected === "third" && "border-b-[2px]"
-              } border-black`}
+              } border-black cursor-pointer`}
             >
               Preços
             </li>
@@ -164,7 +163,7 @@ function CheckoutScreen() {
               onClick={() => setSelected("fourth")}
               className={`pb-[4px] ${
                 selected === "fourth" && "border-b-[2px]"
-              } border-black`}
+              } border-black cursor-pointer`}
             >
               Perguntas frequentes
             </li>
@@ -266,10 +265,10 @@ function CheckoutScreen() {
                   </span>
                 </li>
               </ul>
-              <span className="underline">
+              <a className="underline cursor-pointer">
                 Saiba mais
                 <ChevronRightIcon boxSize={5} />
-              </span>
+              </a>
             </div>
           </div>
           <div className="mb-[64px]">

@@ -56,7 +56,7 @@ const HeroCategoryMenu = () => {
           onMouseLeave={() => {
             stopScrolling();
           }}
-          className="z-10 absolute lg:h-[125px] lg:w-[200px] md:h-[125px] md:w-[180px]"
+          className="z-10 absolute lg:h-[125px] lg:w-[100px] md:h-[125px] md:w-[180px]"
         ></div>
         <div
           onMouseEnter={() => {
@@ -65,7 +65,7 @@ const HeroCategoryMenu = () => {
           onMouseLeave={() => {
             stopScrolling();
           }}
-          className="z-10 absolute lg:h-[125px] lg:w-[200px] md:h-[125px] md:w-[180px] right-0"
+          className="z-10 absolute lg:h-[125px] lg:w-[100px] md:h-[125px] md:w-[180px] right-0"
         ></div>
       </div>
       <div
@@ -95,7 +95,7 @@ const HeroCategoryMenu = () => {
             <Link
               onClick={() => setSearch(false)}
               to="/checkout"
-              className="btn btn-primary lg:px-[30px] lg:py-[22px] md:px-[30px] md:py-[22px] px-[25px] py-[17px] box-border flex-shrink-0 bg-[#DAD9D7] hover:bg-white hover:shadow-2xl rounded-md"
+              className="btn btn-primary lg:px-[30px] lg:py-[22px] md:px-[30px] md:py-[22px] px-[25px] py-[17px] box-border flex-shrink-0 bg-[#01A1C1] hover:shadow-2xl rounded-md"
             >
               Logotipo e identidade
             </Link>

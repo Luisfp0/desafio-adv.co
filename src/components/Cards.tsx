@@ -3,7 +3,7 @@ import { StarIcon, CheckIcon } from "@chakra-ui/icons";
 import comece from "../assets/comece.png";
 import A from "../assets/A.png";
 import verificar from "../assets/verificar.png";
-import teste from "../assets/7147601-manchetes-conceito-icone-copywriting-ideia-linha-fina-ilustracao-publicidade-e-promocao-textos-ferramentas-de-marketing-isolado-esboco-desenho-vetor.jpg";
+import logoManual from "../assets/7147601-manchetes-conceito-icone-copywriting-ideia-linha-fina-ilustracao-publicidade-e-promocao-textos-ferramentas-de-marketing-isolado-esboco-desenho-vetor.jpg";
 import cassino from "../assets/casino.png";
 import computer from "../assets/computer.png";
 import midiaSocial from "../assets/midia-social.png";
@@ -109,7 +109,7 @@ const Cards = () => {
         <div className=" hover:scale-105 hover:shadow-2xl transition shadown-none bg-white box-border p-[20px] lg:w-[469px] md:w-[768px]">
           <div>
             <div className="flex">
-              <Image src={teste} className="w-[70px] h-[70px]"></Image>
+              <Image src={logoManual} className="w-[70px] h-[70px]"></Image>
               <div className="flex flex-col ml-[7px]">
                 <h2 className="text-[19px] font-semibold">
                   Logotipo e manual da marca
