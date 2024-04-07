@@ -13,13 +13,14 @@ function CheckoutScreen() {
   const [ulFixed, setUlFixed] = useState(false);
   const [selected, setSelected] = useState("");
 
-  const fixedOnScrollRef = useRef<HTMLUListElement | null>(null);
+  const fixedOnScrollRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       const ulElement = fixedOnScrollRef.current;
       if (ulElement) {
         const rect = ulElement.getBoundingClientRect();
+        console.log(rect.top);
         if (rect.top <= 0) {
           setUlFixed(true);
         } else {
@@ -40,9 +41,9 @@ function CheckoutScreen() {
       {ulFixed && (
         <div className="flex fixed top-0 w-[100%] bg-white justify-start h-[80px] gap-[15px] items-center shadow-lg z-10">
           <ul
-            className={`justify-start flex w-full gap-[25px] max-w-[1200px] mx-auto`}
+            className={`justify-start flex w-full lg:max-w-[1200px] md:max-w-[768px] max-w-[540px] mx-auto`}
           >
-            <div className="w-[660px] flex justify-between">
+            <div className="w-[660px] flex lg:gap-0 md:gap-[10px] gap-[15px] md:justify-start lg:justify-between justify-between lg:text-[16px] md:text-[14px]">
               <li
                 onClick={() => setSelected("first")}
                 className={`pb-[4px] ${
@@ -79,8 +80,8 @@ function CheckoutScreen() {
           </ul>
         </div>
       )}
-      <div className="container flex justify-between lg:max-w-[1200px] md:max-w-[768px] max-w-[540px] mx-auto pt-[60px] mb-[50px]">
-        <div className="w-[55%] relative">
+      <div className="relative container flex justify-between lg:max-w-[1200px] md:max-w-[768px] max-w-[540px] mx-auto pt-[60px] mb-[50px]">
+        <div className="lg:w-[55%] md:w-[55%] w-full relative">
           <div
             className={`${
               left ? "opacity-100" : "opacity-0"
@@ -133,9 +134,12 @@ function CheckoutScreen() {
             </div>
           </div>
           <ul
-            ref={fixedOnScrollRef}
-            className={`mt-[64px] mb-[48px] justify-between flex w-full  border-b-[1px]`}
+            className={`mt-[64px] mb-[48px] justify-between items-center flex w-full border-b-[1px] relative lg:text-[16px] md:text-[14px]`}
           >
+            <div
+              ref={fixedOnScrollRef}
+              className="absolute bottom-[50px]"
+            ></div>
             <li
               onClick={() => setSelected("first")}
               className={`pb-[4px] ${
@@ -301,8 +305,8 @@ function CheckoutScreen() {
             </div>
           </div>
         </div>
-        <div className="w-[480px] h-[626px] p-[32px] border-[2px] rounded-lg fixed right-[245px]">
-          <div>
+        <div className="lg:w-[480px] md:w-[300px] lg:flex md:flex hidden">
+          <div className="fixed border-[2px] lg:w-[480px] lg:p-[32px] md:w-[300px] md:p-[32px] rounded-lg">
             <h1 className="pb-[24px] text-[32px] font-bold">
               Logo & identidade visual
             </h1>
