@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
-import HeroCategoryMenu from "./components/HeroCategoryMenu";
 import CategoriesScreen from "./pages/CategoriesScreen";
+import CheckoutScreen from "./pages/CheckoutScreen";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<CategoriesScreen />} />
-            <Route path="/checkout" element={<HeroCategoryMenu />} />
+            <Route path="/checkout" element={<CheckoutScreen />} />
           </Routes>
         </div>
       </div>

@@ -107,7 +107,7 @@ export function Header() {
           </div>
         </DrawerContent>
       </Drawer>
-      <div className="container mx-auto flex justify-center items-center w-full lg:max-w-[1024px] md:max-w-[768px] max-w-[540px] h-[80px]">
+      <div className="container mx-auto flex justify-center items-center w-full lg:max-w-[1200px] md:max-w-[768px] max-w-[540px] h-[80px]">
         <div className="px-[15px] py-[20px] flex items-center w-full justify-between">
           <div className="md:flex lg:hidden">
             <Button ref={btnRef} onClick={onOpen}>

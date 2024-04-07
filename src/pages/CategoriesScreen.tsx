@@ -7,7 +7,7 @@ const CategoriesScreen = () => {
   return (
     <>
       <HeroCategoryMenu />
-      <div className="container flex flex-col justify-center lg:max-w-[1024px] md:max-w-[768px] max-w-[540px] mx-auto pt-[60px] mb-[50px]">
+      <div className="container flex flex-col justify-center lg:max-w-[1200px] md:max-w-[768px] max-w-[540px] mx-auto pt-[60px] mb-[50px]">
         <Cards />
         <div className="flex flex-col lg:flex-row md:flex-row sm:flex-row  w-full justify-center items-center bg-[#efedea] mt-[50px] rounded-lg">
           <div className="flex flex-col items-start lg:w-7/12 md:w-7/12 sm:w-7/12 w-full p-[20px]">

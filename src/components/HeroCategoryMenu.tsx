@@ -46,7 +46,7 @@ const HeroCategoryMenu = () => {
   return (
     <>
       <div className="relative">
-        <h1 className="pl-[30px] mt-[30px] lg:text-[24px] md:text-[24px] text-[19px] mb-[25px] lg:max-w-[1024px] md:max-w-[768px] max-w-[540px] mx-auto">
+        <h1 className="pl-[30px] mt-[30px] lg:text-[24px] md:text-[24px] text-[19px] mb-[25px] lg:max-w-[1200px] md:max-w-[768px] max-w-[540px] mx-auto">
           Para o quê você precisa de design?
         </h1>
         <div
@@ -72,7 +72,7 @@ const HeroCategoryMenu = () => {
         ref={containerScrollRef}
         className="mb-[15px] overflow-x-hidden relative"
       >
-        <div className="lg:max-w-[1024px] md:max-w-[768px] max-w-[540px] mx-auto">
+        <div className="lg:max-w-[1200px] md:max-w-[768px] max-w-[540px] mx-auto">
           <div className="flex items-center gap-[15px] text-[19px] pb-[50px] px-[30px]">
             <input
               className={`transition-all duration-300 font-bold py-[22px] text-[19px] rounded-md border-[#dad9d7]

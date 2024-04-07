@@ -207,7 +207,7 @@ const Cards = () => {
           <span className="py-[50px]">pordalibor πych</span>
         </div>
       </figure>
-      <div className="w-[469px]"></div>
+      <div className="w-[500px]"></div>
       <a href="#" className="hover:text-black border-b-[1px]">
         <div className="box-border hover:scale-105 hover:shadow-2xl transition shadown-none bg-white p-[20px] md:w-[768px] lg:w-[469px]">
           <div>
@@ -246,7 +246,7 @@ const Cards = () => {
           </div>
         </div>
       </a>
-      <div className="md:w-0 lg:w-[469px] border-b-[1px]"></div>
+      <div className="md:w-0 lg:w-[500px] border-b-[1px]"></div>
       <a href="#" className=" border-b-[1px] hover:text-black">
         <div className="h-full box-border p-[20px] lg:w-[234px] md:w-[380px] hover:scale-105 hover:shadow-2xl transition shadown-none bg-white">
           <div>
