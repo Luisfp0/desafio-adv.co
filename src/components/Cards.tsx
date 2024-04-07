@@ -19,7 +19,10 @@ const Cards = () => {
           <img className="w-[825px] h-[470px]" src={fishImage}></img>
         </div>
       </figure>
-      <a href="#" className="border-b-[1px] hover:text-black">
+      <a
+        href="#"
+        className="border-b-[1px] lg:border-l-0 border-l-[1px] hover:text-black"
+      >
         <div className="p-[20px] bg-white box-border lg:w-[469px] md:w-[768px] hover:scale-105 hover:shadow-2xl transition shadown-none">
           <div>
             <div className="flex items-center justify-center px-[10px] w-[140px] mb-[15px] py-[4px] bg-[#01a1c1] rounded-xl">
@@ -99,7 +102,10 @@ const Cards = () => {
           </div>
         </div>
       </a>
-      <a href="#" className=" hover:text-black border-b-[1px]">
+      <a
+        href="#"
+        className=" hover:text-black border-b-[1px] lg:border-l-0 border-l-[1px]"
+      >
         <div className=" hover:scale-105 hover:shadow-2xl transition shadown-none bg-white box-border p-[20px] lg:w-[469px] md:w-[768px]">
           <div>
             <div className="flex">
@@ -166,7 +172,7 @@ const Cards = () => {
       </a>
       <a
         href="#"
-        className="hover:text-black hover:scale-105 hover:shadow-2xl transition shadown-none bg-white border-b-[1px]"
+        className="hover:text-black hover:scale-105 hover:shadow-2xl transition shadown-none bg-white border-b-[1px] lg:border-l-0 border-l-[1px]"
       >
         <div className="box-border p-[20px] lg:w-[469px] md:w-[768px]">
           <div>
@@ -208,7 +214,10 @@ const Cards = () => {
         </div>
       </figure>
       <div className="w-[500px]"></div>
-      <a href="#" className="hover:text-black border-b-[1px]">
+      <a
+        href="#"
+        className="hover:text-black border-b-[1px] lg:border-l-0 border-l-[1px]"
+      >
         <div className="box-border hover:scale-105 hover:shadow-2xl transition shadown-none bg-white p-[20px] md:w-[768px] lg:w-[469px]">
           <div>
             <div className="flex">
@@ -247,7 +256,10 @@ const Cards = () => {
         </div>
       </a>
       <div className="md:w-0 lg:w-[500px] border-b-[1px]"></div>
-      <a href="#" className=" border-b-[1px] hover:text-black">
+      <a
+        href="#"
+        className=" border-b-[1px] lg:border-l-0 border-l-[1px] hover:text-black"
+      >
         <div className="h-full box-border p-[20px] lg:w-[234px] md:w-[380px] hover:scale-105 hover:shadow-2xl transition shadown-none bg-white">
           <div>
             <div>
