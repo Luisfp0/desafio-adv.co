@@ -40,10 +40,8 @@ function CheckoutScreen() {
     <>
       {ulFixed && (
         <div className="flex fixed top-0 w-[100%] bg-white justify-start h-[80px] gap-[15px] items-center shadow-lg z-10">
-          <ul
-            className={`justify-start flex w-full lg:max-w-[1200px] md:max-w-[768px] max-w-[540px] mx-auto`}
-          >
-            <div className="w-[660px] flex lg:gap-0 md:gap-[10px] gap-[15px] md:justify-start lg:justify-between justify-between lg:text-[16px] md:text-[14px]">
+          <ul className="justify-start flex w-full lg:max-w-[1200px] md:max-w-[768px] max-w-[540px] mx-auto">
+            <div className="w-[660px] flex lg:gap-0 md:gap-[10px] gap-[15px] md:justify-start lg:justify-between justify-between lg:text-[16px] md:text-[14px] text-[12px]">
               <li
                 onClick={() => setSelected("first")}
                 className={`pb-[4px] ${
@@ -133,9 +131,7 @@ function CheckoutScreen() {
               </span>
             </div>
           </div>
-          <ul
-            className={`mt-[64px] mb-[48px] justify-between items-center flex w-full border-b-[1px] relative lg:text-[16px] md:text-[14px]`}
-          >
+          <ul className="mt-[64px] mb-[48px] justify-between items-center flex w-full border-b-[1px] relative lg:text-[16px] md:text-[14px] text-[12px]">
             <div
               ref={fixedOnScrollRef}
               className="absolute bottom-[50px]"
